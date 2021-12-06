@@ -2,6 +2,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root{
+    --bg:0;
+    --bgc1:rgb(0, 211, 158);
+    --bgc3:rgb(4, 162, 202);
+    --bgc2:rgb(3, 221, 138);
+}
+
+@property --bgd {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+  }
+
+@keyframes arrow {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+#bgg{
+    height: 100vh;
+    border-radius: 0%;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    background:linear-gradient(20deg,var(--bgc1),var(--bgc2));
+    
+    animation: bgrotate 2s infinite;
+}
+body{
+    margin: 0;
+    padding: 0;
+    transition: ease-out;
+}
+
+main{
+    z-index: 2;
+    position: relative;
+}
+
+#m1{
+    height: 100vh;
+    width: 100%;
+    animation: bglg 3s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+#m1img img{
+
+}
+
+#borderr{
+}
+
+#m1h1 h1{
+    margin: 0;
+    transform: translateY(-70%);
+    padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    color: white;
+    transition: ease-out;
+}
+
+#m1svg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#m1svg p{
+    margin: 0;
+    font-family: Outfit;
+    font-weight: 300;
+    color: white;
+}
+
+#m1svg svg{
+    fill: white;
+    animation: arrow 2s infinite;
+}
+
+#usrnm::after{
+    content:"jorgetrueba85";
+}
+
+#m1h1:hover #usrnm::after{
+    content:"Jorge Trueba";
+}
+
+#m2{
+    height: 100vh;
+    width: 100%;  
+    background-color: white;
+}
+
+
+
+/*
+
+:root{
     --bg: #151516;
     --bg2:#1d1d1f;
     --redpnk:#f70f50;
@@ -117,3 +230,4 @@ h1{
         transform: translateY(0%);
     }
 }
+*/ 

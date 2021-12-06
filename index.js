@@ -1,8 +1,19 @@
-function redirect(){
-    
-}
+var degg=0;
+function bgd(){
+    var style = getComputedStyle(document.body);
+    let root = document.documentElement;
+    degg = degg + 5;
+        console.log();
+        document.getElementById('m1').style.background = "linear-gradient(" + degg + "deg,var(--bgc1), var(--bgc2)";
+        // more statements
 
-/*function scrolled(){*/
+     }
+
+    
+
+
+
+/*function scrolled(){
     window.pageYOffset == window.scrollY;
     var y = window.scrollY;
     let root = document.documentElement;
@@ -28,5 +39,4 @@ function redirect(){
     if (y == 0){
         why = 0;
     }
-
-
+    */
