@@ -132,6 +132,25 @@ main{
     align-items: center;
 }
 
+@media print{
+    body{
+        text-align: center;
+    }
+    
+    body::before{
+        text-align: center;
+        content: 'No printing allowed. La impresión no está permitida, se trata de mi informacion personal y sobre mí. Respeta mi decisión y no intentes desactivar el bloqueo :)';
+    }
+    
+    main{
+        display: none;
+    }
+    
+    #bgg{
+        display: none;
+    }
+}
+
 
 #m2 p{
     margin: 1.5rem;
