@@ -27,10 +27,15 @@
     font-size: 30px;
     margin: 3.5rem;
     }
-</style>
+    </style>
 <body onload="" onresize="">
-    <h1 id="main">Da click en el siguiente boton para redirigirte a mi página</h1>
-    <button onclick="window.open('https://jorgetrueba85.github.io');">Aquí</button>
-    <script src="sn.js"></script>
+    <script>
+        function bt(){
+        navigator.clipboard.writeText('https://jorgetrueba85.github.io'); 
+        document.getElementById('but').innerHTML = 'Copiado!';
+        }
+    </script>
+    <h1 id="main">Da click en el siguiente boton para copiar la dirección y pegala en tu navegador para poder acceder</h1>
+    <button id="but" onclick="bt()">Aquí</button>
 </body>
 </html>
