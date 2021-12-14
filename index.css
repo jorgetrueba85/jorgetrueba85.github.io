@@ -82,7 +82,7 @@ main{
 
 #m1h1 h1{
     margin: 0;
-    transform: translateY(-70%);
+    transform: translateY(00%);
     padding:0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
@@ -96,6 +96,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 #m1svg p{
@@ -105,12 +106,15 @@ main{
     color: white;
 }
 
-#m1img img{
-    
+m1imgdiv{
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }
 
 #m1svg svg{
     fill: white;
+    animation: arrow 2s infinite;
 }
 
 #m1svg{
@@ -179,6 +183,7 @@ main{
 .imagecont{
     border-radius: 1.5rem;
     height: 85%;
+    width: auto;
     margin: 3rem;
     box-shadow: 0px 0px 10px 0px rgba(136, 136, 136, 0.267);
     transition: ease-in-out 0.2s;
@@ -192,20 +197,31 @@ main{
     height: 100vh;
     width: 100%;
     background-color: var(--m3);
+    font-family: Outfit;
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
+    align-content: center;
 }
 
-#m3 p{
+#m3img{
+    display: flex;
+    align-content: center;
+}
+
+#m3p{
+    display: flex;
+    align-items: center;
+}
+
+
+#m3p p{
     margin: 1.5rem;
-    margin-left: 0.5rem;
-    font-family: outfit;
+    font-family: Outfit;
     font-size: 30px;
     text-align: center;
 }
 
-#m3 p::first-letter{
+#m3p p::first-letter{
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -255,8 +271,15 @@ b{
     flex-direction: column;
 }
 
-#m3 span{
-    height: 30%;
+#m3img img{
+    height: 70%;
+}
+
+#m3p p{
+    font-size: 30px;
+}
+
+#m3p{
 }
 
 }
